@@ -17,6 +17,13 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 - task: AzureAppConfiguration@3
   inputs:
-    azureSubscription: 'ServiceConnectionTestAlex'
+    azureSubscription: 'Test_March_2021_Push_Task'
     ConfigstoreName: 'AppConfig-test-alex'
     KeyFilter: '*'
+- task: AzureAppConfigurationPush@1
+  inputs:
+    azureSubscription: 'Test_March_2021_Push_Task'
+    ConfigstoreName: 'AppConfig-test-alex'
+    ConfigurationFile: 'config1.json'
+    Separator: ':'
+    Strict: false
