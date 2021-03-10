@@ -1,0 +1,1 @@
+{"Hello":"World","TestApp":{"Settings":{"BackgroundColor":"white","FontColor":"black","FontSize":"24","KeyVaultMessage":"{\"uri\":\"https://keyvault-alkemper.vault.azure.net/secrets/Message1\"}","Message":"Hello! This is made with data from App Configuration","Sentinel":"1"}},"hi":"neha"}
