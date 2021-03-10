@@ -26,7 +26,7 @@ steps:
   inputs:
     azureSubscription: 'Test_March_2021_Push_Task'
     ConfigstoreName: 'AppConfig-test-alex'
-    ConfigurationFile: 'C:\Users\alkemper\Downloads\config1.json'
+    ConfigurationFile: 'master/config1.json'
     Separator: ':'
     Prefix: 'push'
     Label: 'pushtask'
