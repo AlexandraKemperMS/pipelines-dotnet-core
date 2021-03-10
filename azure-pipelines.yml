@@ -1,4 +1,13 @@
 # ASP.NET Core
+- task: AzureAppConfigurationPush@1
+  inputs:
+    azureSubscription: 'Test_March_2021_Push_Task'
+    ConfigstoreName: 'AppConfig-test-alex'
+    ConfigurationFile: 'C:\Users\alkemper\Downloads\config1.json'
+    Separator: ':'
+    Prefix: 'push'
+    Label: 'pushtask'
+    Strict: false
 # Build and test ASP.NET Core projects targeting .NET Core.
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
@@ -20,10 +29,3 @@ steps:
     azureSubscription: 'Test_March_2021_Push_Task'
     ConfigstoreName: 'AppConfig-test-alex'
     KeyFilter: '*'
-- task: AzureAppConfigurationPush@1
-  inputs:
-    azureSubscription: 'Test_March_2021_Push_Task'
-    ConfigstoreName: 'AppConfig-test-alex'
-    ConfigurationFile: 'config1.json'
-    Separator: ':'
-    Strict: false
